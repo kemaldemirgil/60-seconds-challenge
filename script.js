@@ -104,7 +104,7 @@ function playAgain() {
     highScoreButtons.style.display = "none";
     startButton.style.display = "block";
     description.style.display = "block";
-    myTitle.innerHTML = "Coding Quiz Challange";
+    myTitle.innerHTML = "Coding Quiz Challenge";
     description.innerHTML = "Can you answer all the following questions in 60 seconds?<br>Wrong answers will take 10 seconds from the timer.<br>Do you want to continue...";
     nextQues = 0;
     timeNav.innerHTML = "Time: 60";
