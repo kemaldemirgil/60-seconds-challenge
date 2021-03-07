@@ -10,6 +10,7 @@ nav {
     justify-content: space-between;
     font-size: 20px;
     background-image: linear-gradient(to left, #b3dbd2 , #a2c989);
+    border-bottom: 2px groove #9ac4bb;
 }
 nav p {
     margin: 10px;
@@ -37,7 +38,7 @@ footer {
     display:block;
 }
 #start {
-    padding: 2% 6% 2% 6%;
+    padding: 1% 3% 1% 3%;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 25px;
     position:absolute;
@@ -45,6 +46,9 @@ footer {
     transform: translate(-40%, 100%);
     text-align: center;
     box-shadow: 2px 2px 60px #4f924f;
+    animation: grow 1000ms infinite;
+    color: #d9a4f1;
+    font-weight: bold;
 }
 #highScorePage {
     display: none;
@@ -71,4 +75,14 @@ footer {
     font-size: 18px;
     box-sizing: border-box;
 }
-
+@keyframes grow {
+    0% {
+        box-shadow: 2px 2px 10px #b3dbd2;
+    }
+    50% {
+        box-shadow: 2px 2px 60px #d9a4f1;
+    }
+    100% {
+        box-shadow: 2px 2px 10px #b3dbd2;
+    }
+}
