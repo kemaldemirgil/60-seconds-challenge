@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0%;
+    position: relative;
+    background-image: linear-gradient(to right, #b3dbd2 , #a2c989);
+    font-family: 'Ubuntu Mono', monospace;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    background-image: linear-gradient(to left, #b3dbd2 , #a2c989);
+}
+nav p {
+    margin: 10px;
+}
+.timer .highscore {
+    padding: 1%;
+    width: auto;
+}
+section {
+    position: absolute;
+    top: -10%;
+    left: 41%;
+    transform: translate(-40%, 25%);
+    text-align: center;
+    width: 90%;
+}
+#title {
+    font-size: 44px;
+    margin-bottom: 10%;
+}
+#content {
+    font-size: 22px;
+}
+footer {
+    display:block;
+}
+#start {
+    padding: 2% 6% 2% 6%;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 25px;
+    position:absolute;
+    left: 48%;
+    transform: translate(-40%, 100%);
+    text-align: center;
+    box-shadow: 2px 2px 60px #4f924f;
+}
+#highScorePage {
+    display: none;
+}
+#highScorePage button {
+    padding: 10px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+#highScoreChart {
+    margin-top: 20%;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 25px;
+}
+#options {
+    margin-top: 10%;
+    display:none;
+}
+#options button {
+    padding: 10px;
+    margin: 2.5% 1% 2.5% 1%;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+

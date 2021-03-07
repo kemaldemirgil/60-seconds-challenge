@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="back">
+    <!-- Navigation bar -->
+    <nav>
+        <element class = "timer">
+            <p id="time-nav">Time:</p>
+        </element>
+        <element class = "highscore">
+            <p id="high-nav">Highscore</p>
+        </element>
+    </nav>
+    <!-- Main Content -->
+    <section >
+        <h1 id="title">Coding Quiz Challange</h1>
+        <h3 id="content">Can you answer all the following questions in 60 seconds?<br>
+            Wrong answers will take 10 seconds from the timer.<br>
+            Do you want to continue...
+        </h3>
+        <!-- Flexible buttons  -->
+        <div id="buttons">
+            <button id="start" onclick = "startQuiz()">START</button>
+            <div id="options">
+                <button id="option1"></button>
+                <button id="option2"></button>
+                <button id="option3"></button>
+                <button id="option4"></button>
+                <div id="highScorePage">
+                    <p id="highScoreChart"></p>
+                    <button id="clear" onclick = "clearScore()">Clear Score</button>
+                    <button id="playAgain" onclick = "playAgain()">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
