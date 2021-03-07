@@ -40,7 +40,6 @@ function countDown() {
     var timerInterval = setInterval(function() {
         timer--;
         timeNav.innerHTML = "Time: " + timer;
-
         if(timer === 0 || nextQues === 8) {
             clearInterval(timerInterval);
         }
@@ -114,69 +113,37 @@ function clicked(e) {
     nextQues++;
     console.log(nextQues);
     var selectedAnswer = e.target;
-    if (nextQues === 1) {
+    function compareAnswer() {
         if (selectedAnswer === correctAnswer) {
             alert("✔️CORRECT ANSWER✔️");
         } else {
             alert("❌WRONG ANSWER❌");
             timer = timer - 10;
         }
+    }
+    if (nextQues === 1) {
+        compareAnswer();
         ques2();
     }else if (nextQues === 2) {
-        if (selectedAnswer === correctAnswer) {
-            alert("✔️CORRECT ANSWER✔️");
-        } else {
-            alert("❌WRONG ANSWER❌");
-            timer = timer - 10;
-        }
+       compareAnswer();
         ques3();
     }else if (nextQues === 3) {
-        if (selectedAnswer === correctAnswer) {
-            alert("✔️CORRECT ANSWER✔️");
-        } else {
-            alert("❌WRONG ANSWER❌");
-            timer = timer - 10;
-        }
+       compareAnswer();
         ques4();
     }else if (nextQues === 4) {
-        if (selectedAnswer === correctAnswer) {
-            alert("✔️CORRECT ANSWER✔️");
-        } else {
-            alert("❌WRONG ANSWER❌");
-            timer = timer - 10;
-        }
+       compareAnswer();
         ques5();
     }else if (nextQues === 5) {
-        if (selectedAnswer === correctAnswer) {
-            alert("✔️CORRECT ANSWER✔️");
-        } else {
-            alert("❌WRONG ANSWER❌");
-            timer = timer - 10;
-        }
+       compareAnswer();
         ques6();
     }else if (nextQues === 6) {
-        if (selectedAnswer === correctAnswer) {
-            alert("✔️CORRECT ANSWER✔️");
-        } else {
-            alert("❌WRONG ANSWER❌");
-            timer = timer - 10;
-        }
+       compareAnswer();
         ques7();
     }else if (nextQues === 7) {
-        if (selectedAnswer === correctAnswer) {
-            alert("✔️CORRECT ANSWER✔️");
-        } else {
-            alert("❌WRONG ANSWER❌");
-            timer = timer - 10;
-        }
+       compareAnswer();
         ques8();
     }else if (nextQues === 8) {
-        if (selectedAnswer === correctAnswer) {
-            alert("✔️CORRECT ANSWER✔️");
-        } else {
-            alert("❌WRONG ANSWER❌");
-            timer = timer - 10;
-        }
+       compareAnswer();
         yourScore();
     }
 }
