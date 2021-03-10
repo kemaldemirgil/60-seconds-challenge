@@ -89,6 +89,7 @@ function highScore() {
     for (var i = 0; i < localStorage.length; i++) {
         var key = localStorage.key(i);
         var value = localStorage.getItem(key);
+        console.log(key)
         highScoreChart.innerHTML += key + ": " + value + "<br>";
     }
 }
@@ -100,6 +101,7 @@ function clearScore() {
 }
 //////////////////////////////////////////////Play-Again-Repeater//////////////////////////////////////////////
 function playAgain() {
+    highScoreChart.innerHTML = "";
     highScoreButtons.style.display = "none";
     startButton.style.display = "block";
     description.style.display = "block";
