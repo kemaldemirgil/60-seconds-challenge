@@ -2,7 +2,7 @@
 var correctAnswer;
 var wrongAnswer;
 var nextQues = 0;
-var timer = 61;
+var timer = 60;
 var startButton = document.getElementById("start");
 var description = document.getElementById("content");
 var optionsDisplay = document.getElementById("options");
@@ -26,29 +26,35 @@ option4.addEventListener("click", clicked);
 highscoreNav.addEventListener("click", viewHighScore);
 //////////////////////////////////////////////High-Score-Viewer//////////////////////////////////////////////
 function viewHighScore(){
+    highScoreChart.innerHTML = "";
     myTitle.innerHTML = "HighScores";
     description.style.display = "none";
     option1.style.display = "none"; 
     option2.style.display = "none";
     option3.style.display = "none";
     option4.style.display = "none";
-    startButton.style.display = "block";
+    startButton.style.display = "none";
+    highScoreButtons.style.display = "block";
+    for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i);
+        var value = localStorage.getItem(key);
+        console.log(key)
+        highScoreChart.innerHTML += key + ": " + value + "<br>";
+    }
 }
 //////////////////////////////////////////////Timer//////////////////////////////////////////////
 function countDown() {
-    timer = 61;
+    timer = 60;
     var timerInterval = setInterval(function() {
-        timer--;
         timeNav.innerHTML = "Time: " + timer;
+        timer--;
         if(timer === 0 || nextQues === 8) {
             clearInterval(timerInterval);
         }
         if(timer <= 0) {
+            timer = 0;
             clearInterval(timerInterval);
             yourScore();
-        }
-        if(timer < 0) {
-            alert("Congrats! You Reached Negative!")
         }
     }, 1000);
 }
@@ -118,9 +124,13 @@ function clicked(e) {
     function compareAnswer() {
         if (selectedAnswer === correctAnswer) {
             alert("✔️CORRECT ANSWER✔️");
-        } else {
+        } else if (selectedAnswer !== correctAnswer) {
             alert("❌WRONG ANSWER❌");
-            timer = timer - 10;
+            if ((timer - 10) < 0) {
+                timer = 0;
+            } else if ((timer - 10) > 0) {
+                timer = timer - 10;
+            }
         }
     }
     if (nextQues === 1) {
