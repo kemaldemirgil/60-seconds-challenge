@@ -1,5 +1,5 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/kemaldemirgil/code-quiz?color=cyan&label=Last%20Commit&logo=git)
-![GitHub top language](https://img.shields.io/github/languages/top/kemaldemirgil/code-quiz?color=yellow&label=JavaScript&logo=javascript)
+![GitHub last commit](https://img.shields.io/github/last-commit/kemaldemirgil/60-seconds-challenge?color=cyan&label=Last%20Commit&logo=git)
+![GitHub top language](https://img.shields.io/github/languages/top/kemaldemirgil/60-seconds-challenge?color=yellow&label=JavaScript&logo=javascript)
 # Coding Quiz Challenge
 ### Description:
 This is an 8 question coding quiz with a timer of 60 seconds. Every incorrect answer will cost -10 seconds in the timer. Your score will be stored, and multiple attempts are allowed.
@@ -12,10 +12,10 @@ This is my first attempt on creating a quiz using `DOM` elements to manipulate H
 - Spamming highscore navigation button can cause bugs.
 
 ### Webpage:
-https://kemaldemirgil.github.io/code-quiz/
+https://kemaldemirgil.github.io/60-seconds-challenge/
 ![code-quiz](images/ssCode-Quiz.png)
 
 ### License:
 
 Copyright © Kemal Demirgil. All rights reserved.
-Licensed under the [MIT](https://github.com/kemaldemirgil/code-quiz/blob/main/LICENSE) license.
+Licensed under the [MIT](https://github.com/kemaldemirgil/60-seconds-challenge/blob/main/LICENSE) license.
